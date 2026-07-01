@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(node -e \"JSON.parse\\(require\\('fs'\\).readFileSync\\('package.json','utf8'\\)\\); console.log\\('VALID JSON'\\)\")",
+      "Bash(node -e \"console.log\\(require\\('fs'\\).readFileSync\\('tsconfig.json','utf8'\\).slice\\(-40\\)\\)\")",
+      "Bash(nohup npm run dev)",
+      "Bash(echo \"started $!\")",
+      "Bash(curl -s -o /private/tmp/claude-501/-Users-tescureanuirina-Downloads-irina-cv-website/59ba56de-2e0d-4c63-8619-0e2eecbe3637/scratchpad/page.html -w \"HTTP %{http_code}\\\\n\" http://localhost:8080/)",
+      "Bash(npm run *)",
+      "Bash(echo \"BUILD_EXIT=$?\")"
+    ]
+  }
+}
